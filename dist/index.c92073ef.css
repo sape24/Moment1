@@ -13,6 +13,7 @@ header {
   background-color: #0d3c5b;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   max-width: 100%;
   display: flex;
 }
@@ -159,5 +160,39 @@ header img {
   font-size: 1.5em;
   line-height: 1.3em;
   display: flex;
+}
+
+#picgrid {
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+  margin: 5%;
+  display: grid;
+}
+
+#piccontainer {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  place-items: center;
+  gap: 25px;
+  width: 100%;
+  display: flex;
+}
+
+#piccontainer img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 400px;
+  height: 250px;
+}
+
+@media (width <= 800px) {
+  #piccontainer {
+    flex-direction: column;
+  }
+
+  #piccontainer img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.c92073ef.css.map */
